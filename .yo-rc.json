@@ -1,0 +1,18 @@
+{
+  "generator-new-component": {
+    "comment": "This file indicates the working directory from where this runs and is needed in case a parent directory contains a `.yo-rc.json` file too - which would cause it to run from there instead."
+  },
+  "generator-sassdoc-theme": {
+    "themeName": "pattern-lab-starter",
+    "themeEngine": "swig",
+    "author": {
+      "name": "Anthony George"
+    },
+    "themeDesc": "A fancy new SassDoc theme.",
+    "version": "0.1.0",
+    "useExtras": true,
+    "useSass": true,
+    "useSassUtils": true,
+    "useTaskRunner": "gulp"
+  }
+}
