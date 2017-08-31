@@ -1,0 +1,36 @@
+/// Progessive Collapsible
+/// @link http://heydonworks.com/practical_aria_examples/#progressive-collapsibles
+
+.collapsible {
+	padding: 1.5em;
+	background: #E0E1EF;
+	h3 {
+		+ {
+			[aria-hidden] {
+				display: none;
+			}
+			[aria-hidden="false"] {
+				display: block;
+			}
+		}
+	}
+}
+h3 {
+	[aria-expanded] {
+		display: block;
+		width: 100%;
+		font-size: inherit;
+		font-family: inherit;
+		text-transform: inherit;
+		text-align: inherit;
+		margin: 0;
+		&:before {
+			content: '\25ba\0020';
+		}
+	}
+	[aria-expanded="true"] {
+		&:before {
+			content: '\25bc\0020';
+		}
+	}
+}
