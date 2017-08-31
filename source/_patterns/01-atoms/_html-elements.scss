@@ -13,7 +13,7 @@ main {
   display: block;
 }
 
-// All last children
+// All last childrens
 :last-child {
   margin-bottom: 0;
 }
@@ -22,4 +22,3 @@ main {
 [class]:last-child {
   margin-bottom: 0;
 }
-

@@ -98,10 +98,6 @@ $sg-animate-quick : 0.1s;
 $sg-border-radius : 3px;
 $sg-border-radius-med : 6px;
 
-// Nomensa
-$sg-nomensa-red : #e80004;
-$sg-nomensa-pink : #e40c78;
-$sg-nomensa-dkPink : #aa175e;
 
 /*------------------------------------*\
 #RESET
@@ -174,7 +170,7 @@ $sg-nomensa-dkPink : #aa175e;
 * and tools.
 */
 .sg-header {
-    background: $sg-nomensa-pink;
+    background: $sg-black;
     color: $sg-white;
     font-family: $sg-font;
     text-transform: uppercase;
@@ -198,7 +194,7 @@ $sg-nomensa-dkPink : #aa175e;
     */
     a {
         font-size: $sg-font-size-sm;
-        color: $sg-white;
+        color: $sg-gray;
         text-decoration: none;
         line-height: 1;
         padding: 1em 0.7em;
@@ -207,7 +203,7 @@ $sg-nomensa-dkPink : #aa175e;
 
         &:hover, &:focus, &.active {
             color: $sg-white;
-            background: $sg-nomensa-dkPink;
+            background: $sg-gray-dark;
         }
     }
 }
@@ -327,7 +323,7 @@ $sg-nomensa-dkPink : #aa175e;
 
     &.active {
         color: $sg-white;
-        background: $sg-nomensa-red;
+        background: $sg-gray-dark;
 
         &:after {
             top: -2px;
@@ -355,7 +351,7 @@ $sg-nomensa-dkPink : #aa175e;
     * List items appearing in each accordion panel
     */
     li {
-        background: $sg-nomensa-red;
+        background: $sg-gray-dark;
 
         &:last-child {
             border-bottom-left-radius: $sg-border-radius-med;
@@ -465,7 +461,7 @@ $sg-nomensa-dkPink : #aa175e;
 */
 .sg-current-size {
     font-size: 70%;
-    color: $sg-white;
+    color: $sg-gray;
     padding: 0.85em 0.7em;
 
     @media all and (min-width: $sg-bp-large) {
@@ -490,21 +486,21 @@ $sg-nomensa-dkPink : #aa175e;
     padding: 0.1em;
     border: 0;
     border-radius: $sg-border-radius;
-    background: $sg-nomensa-pink;
-    color: $sg-white;
+    background: $sg-black;
+    color: $sg-gray;
     width: 25px;
     text-align: right;
     transition: all $sg-animate-quick ease-out;
 
     &:hover {
         color: $sg-white;
-        background: $sg-nomensa-dkPink;
+        background: $sg-gray-dark;
     }
 
     &:active, &:focus {
         outline: 0;
-        background: $sg-white;
-        color: $sg-gray-dark;
+        background: $sg-gray;
+        color: $sg-white;
     }
 
     @media all and (min-width: $sg-bp-med) {
@@ -559,8 +555,8 @@ $sg-nomensa-dkPink : #aa175e;
 */
 .sg-tools-toggle {
     font-size: $sg-font-size-sm;
-    background: $sg-nomensa-pink;
-    color: $sg-white;
+    background: $sg-black;
+    color: $sg-gray;
     text-decoration: none;
     line-height: 1;
     border: 0;
@@ -570,9 +566,6 @@ $sg-nomensa-dkPink : #aa175e;
     &:after {
         display: none;
         content: "";
-    }
-    svg path {
-      fill: $sg-white!important;
     }
 }
 
@@ -605,8 +598,8 @@ $sg-nomensa-dkPink : #aa175e;
 
 .typeahead {
     border: 0;
-    background: $sg-white;
-    color: $sg-gray-dark;
+    background: $sg-gray-dark;
+    color: $sg-gray;
     width: 100%;
     right: 0;
     padding: 0.8em;
@@ -619,8 +612,8 @@ $sg-nomensa-dkPink : #aa175e;
 }
 
 .tt-input {
-    background: $sg-white;
-    color: $sg-gray-dark;
+    background: $sg-gray;
+    color: $sg-white;
     text-transform: uppercase;
 
     &:focus {
@@ -927,7 +920,7 @@ $sg-nomensa-dkPink : #aa175e;
         font-weight: bold;
 
         &:hover, &:focus {
-            color: $sg-nomensa-dkPink !important;
+            color: $sg-black  !important;
         }
     }
 
@@ -1155,7 +1148,7 @@ $sg-nomensa-dkPink : #aa175e;
    pre[class*=language-] {
      white-space: pre-wrap;
      @media all and (min-width: 42em) {
-       white-space: pre;
+       white-space: pre;		
      }
    }
  }

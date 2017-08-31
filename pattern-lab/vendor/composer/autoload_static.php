@@ -7,6 +7,10 @@ namespace Composer\Autoload;
 class ComposerStaticInitb30810af9ca496ec8561add33f4edcc4
 {
     public static $prefixLengthsPsr4 = array (
+        'T' => 
+        array (
+            'Twig\\' => 5,
+        ),
         'S' => 
         array (
             'Symfony\\Component\\Yaml\\' => 23,
@@ -28,6 +32,10 @@ class ComposerStaticInitb30810af9ca496ec8561add33f4edcc4
     );
 
     public static $prefixDirsPsr4 = array (
+        'Twig\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/twig/twig/src',
+        ),
         'Symfony\\Component\\Yaml\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/yaml',

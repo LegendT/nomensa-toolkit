@@ -15,85 +15,6 @@
   margin-top: 5px;
 }
 
-h1, .h1 {
-  font-family: "LatoRegular", sans-serif;
-  font-size: 52px;
-  color: #ba0820;
-}
-
-h2, .h2 {
-  font-family: "LatoRegular", sans-serif;
-  font-size: 36px;
-}
-
-h3, .h3 {
-  font-family: "LatoRegular", sans-serif;
-  font-size: 20px;
-}
-
-h4, .h4 {
-  font-family: "LatoRegular", sans-serif;
-  font-size: 18px;
-}
-
-h5, .h5 {
-  font-family: "LatoRegular", sans-serif;
-  font-size: 16px;
-}
-
-h6, .h6 {
-  font-family: "LatoRegular", sans-serif;
-  font-size: 14px;
-}
-
-body {
-  font-family: "Helvetica", sans-serif;
-}
-
-p {
-  margin: 0 0 5px;
-}
-
-a:link, a:visited {
-  color: #ba0820;
-  text-decoration: none;
-}
-
-a:hover, a:focus, a:active {
-  color: #ba0820;
-  text-decoration: underline;
-}
-
-blockquote {
-  font-style: italic;
-  border-left: solid 3px #7a7a7a;
-  margin-left: 20px;
-  padding-left: 20px;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-hr {
-  border-style: solid;
-  border-width: 1px 0 0;
-  color: currentColor;
-}
-
-code:before {
-  content: '`';
-}
-
-code:after {
-  content: '`';
-}
-
-pre code:after, pre code:before {
-  content: '';
-}
-
 .demo-transition.transition-opacity {
   transition: opacity 0.3s ease-in;
 }
@@ -773,6 +694,101 @@ pre code:after, pre code:before {
   }
 }
 
+.u-spacing-down {
+  margin-bottom: 20px;
+}
+
+.u-spacing-up {
+  margin-top: 20px;
+}
+
+.u-gap-down {
+  margin-bottom: 5px;
+}
+
+.u-gap-up {
+  margin-top: 5px;
+}
+
+h1, .h1 {
+  font-family: "LatoRegular", sans-serif;
+  font-size: 52px;
+  color: #ba0820;
+}
+
+h2, .h2 {
+  font-family: "LatoRegular", sans-serif;
+  font-size: 36px;
+}
+
+h3, .h3 {
+  font-family: "LatoRegular", sans-serif;
+  font-size: 20px;
+}
+
+h4, .h4 {
+  font-family: "LatoRegular", sans-serif;
+  font-size: 18px;
+}
+
+h5, .h5 {
+  font-family: "LatoRegular", sans-serif;
+  font-size: 16px;
+}
+
+h6, .h6 {
+  font-family: "LatoRegular", sans-serif;
+  font-size: 14px;
+}
+
+body {
+  font-family: "Helvetica", sans-serif;
+}
+
+p {
+  margin: 0 0 5px;
+}
+
+a:link, a:visited {
+  color: #ba0820;
+  text-decoration: none;
+}
+
+a:hover, a:focus, a:active {
+  color: #ba0820;
+  text-decoration: underline;
+}
+
+blockquote {
+  font-style: italic;
+  border-left: solid 3px #7a7a7a;
+  margin-left: 20px;
+  padding-left: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+hr {
+  border-style: solid;
+  border-width: 1px 0 0;
+  color: currentColor;
+}
+
+code:before {
+  content: '`';
+}
+
+code:after {
+  content: '`';
+}
+
+pre code:after, pre code:before {
+  content: '';
+}
+
 .float-left {
   float: left;
 }
@@ -901,8 +917,8 @@ input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:act
 
 @font-face {
   font-family: "icons";
-  src: url("icons.eot?cachebust=69122");
-  src: url("icons.eot?cachebust=56703#iefix") format("eot"), url("icons.woff?cachebust=40249") format("woff"), url("icons.ttf?cachebust=42746") format("truetype"), url("icons.svg?cachebust=78590#icons") format("svg");
+  src: url("icons.eot?cachebust=6728");
+  src: url("icons.eot?cachebust=24726#iefix") format("eot"), url("icons.woff?cachebust=80893") format("woff"), url("icons.ttf?cachebust=42342") format("truetype"), url("icons.svg?cachebust=65547#icons") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -953,32 +969,32 @@ input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:act
 
 .collapsible {
   padding: 1.5em;
-  background: #E0E1EF;
+  background: #e0e1ef;
 }
 
 .collapsible h3 + [aria-hidden] {
   display: none;
 }
 
-.collapsible h3 + [aria-hidden="false"] {
+.collapsible h3 + [aria-hidden='false'] {
   display: block;
 }
 
 h3 [aria-expanded] {
+  font-family: inherit;
+  font-size: inherit;
   display: block;
   width: 100%;
-  font-size: inherit;
-  font-family: inherit;
-  text-transform: inherit;
-  text-align: inherit;
   margin: 0;
+  text-align: inherit;
+  text-transform: inherit;
 }
 
 h3 [aria-expanded]:before {
   content: '\25ba\0020';
 }
 
-h3 [aria-expanded="true"]:before {
+h3 [aria-expanded='true']:before {
   content: '\25bc\0020';
 }
 

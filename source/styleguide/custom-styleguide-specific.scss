@@ -1,3 +1,5 @@
+@import "../_patterns/00-base/colors/color-vars";
+
 /*------------------------------------*\
     $PATTERN LAB-SPECIFIC STYLES
 \*------------------------------------*/
@@ -7,7 +9,6 @@
  * It's also helpful for overriding context-specific styles like fixed or absolutely positioned elements
  * These styles will not be your production CSS.
  */
-@import "../_patterns/00-base/05-colors/_color-vars.scss";
 
 pre {
   margin-top: 0;
@@ -22,6 +23,7 @@ pre {
   overflow: hidden;
   margin: 5px;
   padding: 0;
+
   > li {
     overflow: hidden;
     border: 1px solid #ccc;
@@ -29,28 +31,38 @@ pre {
     margin: 0 0 10px;
     box-sizing: border-box;
     font-size: 12px;
+
     .sg-swatch {
       display: block;
       height: 25px;
+
       //float: left;
       //width: 100%;
       border: dotted 1px hsl(0, 0%, 50%);
     }
+
     .sg-info {
       line-height: 1;
+
       //float: right;
       //width: 66%;
+
     }
+
     @media all and (min-width: 400px) {
       float: left;
       width: 49%;
       margin-right: 1%;
+
       .sg-swatch {
         //height: 100px;
+
       }
     }
+
     @media all and (min-width: 700px) {
       width: 24%;
+
       &:nth-child(4n+1) {
         clear: both;
       }
@@ -61,20 +73,24 @@ pre {
 .sg-breakpoints {
   overflow: hidden;
   position: relative;
+
   ul {
     margin: 0;
     padding: 0;
   }
+
   li {
     list-style-type: none;
     margin: 0;
     padding: 0;
   }
+
   .breakpoints {
     > li {
       position: absolute;
       border-left: solid 3px hsl(0, 0%, 35%);
       height: 100%;
+
       //      > .icon--arrow--right-medium {
       //        font-size: 18px;
       //        margin-top: 100px;
@@ -83,24 +99,31 @@ pre {
         //        @include transform(rotate(90deg));
         //        @include transform-origin(bottom left);
         display: block;
+
         //        position: absolute;
         //        bottom: 20px;
         background: hsl(0, 0%, 35%);
         padding: 3px;
         color: white;
       }
+
       &:hover {
         // stylelint-disable max-nesting-depth, selector-max-specificity
         border-left-color: hsla(0, 0%, 35%, 0.3);
+
         > .label {
           opacity: 0;
         }
+
         // stylelint-enable max-nesting-depth, selector-max-specificity
+
       }
     }
   }
+
   .device_widths {
     padding-top: 20px;
+
     > li {
       border-bottom: solid 3px hsl(0, 0%, 80%);
       text-align: right;
@@ -117,11 +140,13 @@ pre {
     text-transform: uppercase;
     border-bottom: 2px solid black;
   }
+
   th,
   td {
     text-align: left;
     white-space: nowrap;
     line-height: 1.5em;
+
     &:first-child {
       padding-right: 12px;
     }
@@ -153,6 +178,7 @@ pre {
   border-radius: 8px;
   line-height: 2em;
   overflow: hidden;
+
   &:last-child {
     margin-bottom: 0.5em;
   }

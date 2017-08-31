@@ -20,7 +20,6 @@
   Drupal.behaviors.progressivecollapsibles = {
     attach: function attach(context) {
       $('.collapsible h3').each(function () {
-
         var $this = $(this);
 
         // create unique id for a11y relationship
@@ -40,7 +39,7 @@
         // Toggle the state properties
 
         button.on('click', function () {
-          var state = $(this).attr('aria-expanded') === 'false' ? true : false;
+          var state = $(this).attr('aria-expanded') === 'false';
           $(this).attr('aria-expanded', state);
           panel.attr('aria-hidden', !state);
         });
