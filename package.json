@@ -31,7 +31,10 @@
     "bower": "^1.8.0",
     "gulp": "gulpjs/gulp#4.0",
     "p2-theme-core": "^9.3.1",
+    "plugin-node-tab": "^2.0.2",
     "rc": "^1.2.0",
+    "sassdoc-theme-pheek": "^0.5.0",
+    "sassdoc-theme-vulcan": "^0.2.0",
     "stylelint-scss": "^1.4.3",
     "swig": "^1.4.2"
   },

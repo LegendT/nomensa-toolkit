@@ -41,6 +41,16 @@ twigTestExt: test.php
 styleguideKit: pattern-lab/styleguidekit-twig-default
 styleguideKitPath: vendor/pattern-lab/styleguidekit-twig-default
 plugins:
+  plugin-node-tab:
+    enabled: true
+    initialized: true
+    options:
+      tabsToAdd:
+        - json
+        - js
+  plugin-node-clipboard:
+    enabled: true
+    initialized: false
   faker:
     enabled: true
     locale: en_US
@@ -68,17 +78,34 @@ plugins:
           - ../source/_patterns/01-atoms
           - ../source/_patterns/01-atoms/buttons
           - ../source/_patterns/01-atoms/forms
+          - ../source/_patterns/01-atoms/global
           - ../source/_patterns/01-atoms/images
+          - ../source/_patterns/01-atoms/lists
+          - ../source/_patterns/01-atoms/media
+          - ../source/_patterns/01-atoms/tables
+          - ../source/_patterns/01-atoms/text
       molecules:
         paths:
           - ../source/_patterns/02-molecules
+          - ../source/_patterns/02-molecules/blocks
           - ../source/_patterns/02-molecules/branding
+          - ../source/_patterns/02-molecules/breadcrumbs
           - ../source/_patterns/02-molecules/caption-block
+          - ../source/_patterns/02-molecules/components
+          - ../source/_patterns/02-molecules/forms
+          - ../source/_patterns/02-molecules/media
+          - ../source/_patterns/02-molecules/messaging
+          - ../source/_patterns/02-molecules/navigation
           - ../source/_patterns/02-molecules/progressive-collapsibles
+          - ../source/_patterns/02-molecules/text
       organisms:
         paths:
           - ../source/_patterns/03-organisms
+          - ../source/_patterns/03-organisms/article
+          - ../source/_patterns/03-organisms/comments
+          - ../source/_patterns/03-organisms/global
           - ../source/_patterns/03-organisms/grids/caption-grid-block
+          - ../source/_patterns/03-organisms/sections
           - ../source/_patterns/03-organisms/site/site-footer
           - ../source/_patterns/03-organisms/site/site-header
       templates:

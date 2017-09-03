@@ -15,5 +15,15 @@ module.exports = {
       props: false,
     }],
     'react/require-extension': [0],
+    "space-unary-ops": [
+      2, {
+        "words": true,
+        "nonwords": false,
+        "overrides": {
+          "new": false,
+          "++": true
+        }
+      }
+    ],
   }
 };

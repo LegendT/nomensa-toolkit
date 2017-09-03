@@ -32,10 +32,13 @@ module.exports = {
     sassdoc: {
       enabled: true,
       dest: 'dest/sassdoc',
-      verbose: false,
+      verbose: true,
       basePath: '../../source/_patterns',
       exclude: [],
-      theme: 'default',
+      theme: 'pheek',
+      display: {
+        alias: true,
+      },
       // http://sassdoc.com/customising-the-view/#sort
       sort: [
         'file',
